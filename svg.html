@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG, Icon, and iFrame Example (No CSS)</title>
+    
+    
+    <link rel="icon" href="image.png" type="image/x-icon">
+      <style>
+    body{
+        background-color: rgb(164, 158, 152);
+    }
+    audio {
+      width: 300px;
+      filter: drop-shadow(0 0 4px #f0f);
+    }
+    iframe{
+        filter: drop-shadow(0 0 4px #f0f);
+    }
+    .video-wrapper {
+      padding: 10px;
+      border-radius: 12px;
+      animation: glow 2s infinite alternate;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 10px;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+      }
+      100% {
+        box-shadow: 0 0 20px #f0f, 0 0 40px #0ff, 0 0 60px #f0f;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    
+
+    <h1>HTML Page with SVG, Icon, and Video </h1>
+
+    <div>
+        <h2>SVG Image </h2>
+        <svg width="200" height="150" viewBox="0 0 200 150">
+            
+            <circle cx="100" cy="75" r="40" fill="orange" stroke="darkorange" stroke-width="2"/>
+          
+        </svg>
+        <svg><style border-radius="30px"></style>
+         <image href="image2.png" width="300" height="200"  ></image></style></svg>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        
+        <h2>Embedded Video (YouTube iFrame)</h2>
+       <iframe 
+    width="560" height="315"
+    src="https://www.youtube.com/embed/VQRLujxTm3c"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+    </iframe>
+    
+    <audio controls >
+  <source src="sample.mp3" type="audio/mpeg">
+  
+</audio>
+
+       
+    </div>
+
+</body>
+</html>
