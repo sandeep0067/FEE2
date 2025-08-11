@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+   
+    border: 4px solid black;
+    
+
+   
+
+    
+}
+.element{
+    border: 3px solid ;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    justify-content: flex-end;
+}
+#first{
+flex-shrink:1;
+}
+#second{
+    flex-shrink:2;
+}
+third{
+    flex-shrink: 3;
+}
+body{
+background-color:blue;
+}
+@media screen and (max-width: 1000px) {
+   body{
+    background-color:red;
+
+}
+.container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+   h1{
+    text-align: center;
+    color: white;
+    font-size: 240px;
+    margin-top: 20px;
+   }
+    
+
+}
